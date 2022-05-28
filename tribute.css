@@ -1,0 +1,79 @@
+body{
+    margin-top:60px;
+    margin-bottom:60px;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Varela Round', sans-serif;
+    } 
+  
+  h3{
+    text-align: center;
+    font-size: 22px;
+  }
+
+  html{
+    height: 300%;
+  }
+  body{
+    position: relative;
+    height: 300%;
+  }
+  
+  body:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(logo.jpg);
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  .responsive{
+    max-width: 100%;
+    height: auto; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
+  }
+  p {
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+   } 
+
+   #rcorners4 {
+    text-align: center;
+    border-radius: 25px;
+    background: #ebf0f1;
+    padding: 30px; 
+    width: 900px;
+    height: 20px;  
+  }
+
+  ul {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px; 
+    background-color:rgba(107, 108, 116, 0.288);
+    color:rgb(14, 7, 7);
+   } 
+  
+.watermark {
+   position: relative; 
+  }
+.watermark::after { 
+  position: absolute; bottom: 0; right: 0; content: "COPYRIGHT";
+ }
